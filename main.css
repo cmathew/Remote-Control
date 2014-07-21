@@ -1,0 +1,74 @@
+.remote-panel-container {
+	background: transparent url('handle_bg.png') no-repeat;
+	height: 530px;
+	width: 530px;
+	position: relative;
+}
+
+.remote-panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+	height: 100%;
+}
+
+/* button reset */
+.remote-button {
+	background: none;
+	outline: none;
+	border: none;	
+}
+
+.button-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.single-button-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* 
+must be sized to match highlighted version of each image
+they are larger, and we want buttons taking up constant amount of space
+*/
+.button-row  .remote-button {
+	width: 124px;
+	height: 117px;
+}
+.single-button-row  .remote-button {
+	width: 133px;
+	height: 116px;
+}
+
+/* One-off positional rules */
+#seek-backward-button {
+	position: relative;
+	left: 20px;
+}
+#seek-forward-button {
+	position: relative;
+	right: 20px;
+}
+
+#play-button {
+	width: 218px;
+	height: 218px;
+	background-color: transparent;
+	background-image: url('center_ball.png');
+}
+#play-button:active {
+	background-image: url('center_ball_press.png');
+}
+
+#volume-button {
+	position: relative;
+	top: 20px;
+}
+#mute-button {
+	position: relative;
+	bottom: 20px;
+}
